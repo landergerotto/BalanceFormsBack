@@ -1,10 +1,8 @@
 {
     "version": 2,
-    "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+    "builds": [{ "src": "./server.js", "use": "@vercel/node" }],
     "routes": [
-        { "src": "/", "dest": "/" },
-        { "src": "/player/getPlayer", "dest": "/" },
-        { "src": "/api/postPlayer", "dest": "/" },
-        { "src": "/api/clearPlayers", "dest": "/" }
+        { "src": "/(.*)", "dest": "/" }
+
       ]
 }
