@@ -1,3 +1,7 @@
+
+// Em algum momento isso aq foi usado, mas por motivos de dar bug pra usar no
+// vercel eu passei la pro index.js
+
 const mongoose = require("mongoose");
 require('dotenv').config();
 

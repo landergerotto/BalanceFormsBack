@@ -1,0 +1,5 @@
+acho q n preciso falar muito, sao so as tabelas e como elas sao mandadas.
+
+player sao referentes aos json que enviamos do windows forms
+test_value eh referente ao status do teste (0: n comecou, 1: comecou, 2: parou)
+values sao referentes aos valores que serao utilizados no teste

@@ -1,0 +1,15 @@
+eh, tem o server ali, tem o vercel ali e eu te juro q n entendi como q as
+pessoas fizeram isso funcionar.
+
+pelo q eu entendi, o vercel vai procurar uma pasta/arquivo para comecar a buildar.
+nisso ele vai iniciar a aplicacao toda, mas eu n consegui fazer isso funcionar.
+
+tentei fazer com um servidor teste onde ele mandava um KK qnd abria no '/', mas
+msm assim n deu certo, o vercel mostrava o meu codigo kkkkkkkkkkkk
+
+eu desisti de tabalhar nisso e fui fazer as pags do front q tinham q ser refeitas
+em react(pq eu quis na vdd, mas ficou meio troll no processo)
+
+a ideia das paginas eh elas mandarem informacoes pro servidor(meio q pra setar o teste)
+e o winforms eh pra pegar essas infos e no final mandar um json lindao que vai pra
+tabela player.

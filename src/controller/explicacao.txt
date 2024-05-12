@@ -1,0 +1,7 @@
+Aq sao is controllers, tao bem feliz
+
+a ideia aq (acho q ficou bem melhor feita no valuesController)
+eh so ter um elemento nas tabelas test_value e values, isso pq elas sao nossas
+referencias de status de teste e valores do teste (ter mais faria com q a gente
+sempre tivesse q ler o ultimo registro, assim se tornando cada vez mais lento 
+conforme a aplicacao fosse usada)

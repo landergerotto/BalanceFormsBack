@@ -16,17 +16,24 @@ class ValuesController {
         if (!test1 || !test2)
             return res.status(400).send({ message: 'Fields cannot be empty' });
 
-        const values = new Values({
-            test1,
-            test2
-        });
-
         try {
-            await values.save();
-            res.status(201).send({ message: 'Values registered successfully' });
+            let values = await Values.findOne();
+
+            if (!values) {
+                // If values don't exist, create a new entry
+                values = new Values({ test1, test2 });
+                await values.save();
+                return res.status(201).send({ message: 'Values registered successfully' });
+            } else {
+                // If values exist, update the existing entry
+                values.test1 = test1;
+                values.test2 = test2;
+                await values.save();
+                return res.status(200).send({ message: 'Values updated successfully' });
+            }
         } catch (error) {
             console.error(error);
-            return res.status(500).send({ message: 'Something failed while creating values' });
+            return res.status(500).send({ message: 'Something failed while processing values' });
         }
     }
 

@@ -1,3 +1,6 @@
+
+// inicializacao de rotas
+
 const express = require("express");
 const player = require("../src/routes/player");
 const test = require("../src/routes/test");
