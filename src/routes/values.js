@@ -6,8 +6,8 @@ const ValuesController = require("../controller/ValuesController");
 const router = express.Router();
 
 router
-  .get("/", ValuesController.getValues)
-  .post("/", ValuesController.postValues)
-  .delete("/", ValuesController.clearValues)
+  .get("/getValues", ValuesController.getValues)
+  .post("/postValues", ValuesController.postValues)
+  .delete("/deleteValues", ValuesController.clearValues)
 
 module.exports = router;

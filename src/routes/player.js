@@ -6,8 +6,8 @@ const PlayerController = require("../controller/PlayerController");
 const router = express.Router();
 
 router
-  .post("/", PlayerController.postPlayer)
-  .get("/", PlayerController.getPlayers)
-  .delete("/", PlayerController.clearPlayers);
+  .post("/postPlayer", PlayerController.postPlayer)
+  .get("/getPlayer", PlayerController.getPlayers)
+  .delete("/deletePlayer", PlayerController.clearPlayers);
 
 module.exports = router;
