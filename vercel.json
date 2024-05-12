@@ -1,17 +1,19 @@
 {
-    "version": 2,
-    "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-    "routes": [
-        { "src": "/", "dest": "/" },
-        { "src": "/api/getplayers", "dest": "/" },
-        { "src": "/api/postplayer", "dest": "/" },
-        { "src": "/api/deleteplayers", "dest": "/" },
-        { "src": "/challenge/getstatus", "dest": "/"},
-        { "src": "/challenge/start", "dest": "/" },
-        { "src": "/challenge/stop", "dest": "/" },
-        { "src": "/challenge/postvalues", "dest": "/" },
-        { "src": "/challenge/getvalues", "dest": "/" },
-        { "src": "/challenge/gettime", "dest": "/" },
-        { "src": "/challenge/posttime", "dest": "/" }
-      ]
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [
+      { "src": "/player(.*)", "dest": "/src/routes/player$1" },
+      { "src": "/test(.*)", "dest": "/src/routes/test$1" },
+      { "src": "/values(.*)", "dest": "/src/routes/values$1" },
+      { "src": "/api/getplayers", "dest": "/src/routes/player" },
+      { "src": "/api/postplayer", "dest": "/src/routes/player" },
+      { "src": "/api/deleteplayers", "dest": "/src/routes/player" },
+      { "src": "/challenge/getstatus", "dest": "/src/routes/test" },
+      { "src": "/challenge/start", "dest": "/src/routes/test" },
+      { "src": "/challenge/stop", "dest": "/src/routes/test" },
+      { "src": "/challenge/postvalues", "dest": "/src/routes/test" },
+      { "src": "/challenge/getvalues", "dest": "/src/routes/test" },
+      { "src": "/challenge/gettime", "dest": "/src/routes/test" },
+      { "src": "/challenge/posttime", "dest": "/src/routes/test" }
+  ]
 }

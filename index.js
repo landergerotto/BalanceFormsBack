@@ -9,7 +9,7 @@ const app = express();
 async function connectToDB() {
   try {
     await mongoose.connect(process.env.MONGODB_CONNECT_URI);
-    console.log("Connected to MongoDB Atlas");
+    console.log("Connected to MongoDB Atlasrer");
   } catch (error) {
     console.error("Error connecting to MongoDB Atlas:", error);
   }
@@ -32,4 +32,5 @@ require("./startup/routes")(app);
 
 // inicializa a porta
 const port = process.env.PORT || 8080;
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+// app.listen(port, () => console.log(`Server is running on port ${port}`));
+app.listen(port, () => console.log(`Acesse: http://localhost:${port}/`));

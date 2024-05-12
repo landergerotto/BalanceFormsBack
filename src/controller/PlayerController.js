@@ -13,7 +13,7 @@ class PlayerController {
         const { nome, nascimento, prova1, prova2 } = req.body;
     
         if (!nome || !nascimento || !prova1 || !prova2)
-            return res.status(400).send({ message: 'Fields cannot be empty' });
+            return res.status(400).send({ message: 'Fields cannot be empty3123' });
     
         const player = new Player({
             nome,
