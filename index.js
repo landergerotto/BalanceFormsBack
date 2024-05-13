@@ -8,7 +8,7 @@ const app = express();
 // faz conexao com o AtlasDB(mongoDB online)
 async function connectToDB() {
   try {
-    await mongoose.connect(process.env.MONGODB_CONNECT_URI);
+    await mongoose.connect('mongodb+srv://rntmendes11:forms1234@cluster0.zxm1sod.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     console.log("Connected to MongoDB Atlasrer");
   } catch (error) {
     console.error("Error connecting to MongoDB Atlas:", error);
