@@ -4,7 +4,7 @@
   "routes": [
       { "src": "/", "dest": "/" },
       { "src": "/player/postPlayer", "dest": "/" },
-      { "src": "/player/getPlayer", "dest": "/player/getPlayer" },
+      { "src": "/player/getPlayer", "dest": "/" },
       { "src": "/player/deletePlayer", "dest": "/" },
       { "src": "/test/postCreate", "dest": "/" },
       { "src": "/test/postSet", "dest": "/" },
