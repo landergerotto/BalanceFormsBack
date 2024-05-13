@@ -30,9 +30,6 @@ class Test_ValueController {
     static async postTestStatus(req, res) {
         const { test_value } = req.body;
     
-        if (!test_value)
-            return res.status(400).send({ message: 'Fields cannot be empty' });
-    
         try {
             let status = await Status.findOne();
     
